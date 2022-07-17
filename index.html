@@ -16,30 +16,40 @@
         <img src="/img/header-image.webp" alt="image">
       </div>
       <div class="header__text">
-        Website with entertainment content
+        <a href="/index.html">Website with entertainment content</a>
       </div>
       <div class="header__search">
         <div class="header__input">
-          <input type="text">
+          <input type="text" placeholder="search">
         </div>
         <div class="header__button">
-          <button>Find</button>
+          <button>Search</button>
         </div>
       </div>
     </header>
 
-    <aside>
-      Aside
-    </aside>
+    <nav>
+      <ul>
+        <a href="#"><li>Music</li></a>
+        <a href="#"><li>Films</li></a>
+        <a href="#"><li>Cartoons</li></a>
+        <a href="#"><li>Pictures</li></a>
+      </ul>
+    </nav>
 
     <main>
       I'm a body
     </main>
 
     <footer>
-      Footer
+      <span class="footer">
+        © Hand made,
+      </span>
     </footer>
   </div>
+  <script>
+    document.querySelector('.footer').textContent += new Date().getFullYear();
+  </script>
 </body>
 
 </html>
