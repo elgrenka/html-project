@@ -127,14 +127,16 @@ nav {
   border-radius: 10px;
 }
 
-nav a,
-.container a {
+nav span,
+nav a {
   text-decoration: none;
   color: initial;
 }
 
+nav span:hover,
 nav a:hover {
   font-weight: bold;
+  cursor: pointer;
 }
 
 nav li {
@@ -153,6 +155,17 @@ main {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  gap: 30px;
+}
+
+.box-music,
+.box-movies,
+.box-cartoons,
+.box-pictures {
+  display: none;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .music,
@@ -162,6 +175,7 @@ main {
   width: 120px;
   height: 120px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .music img,

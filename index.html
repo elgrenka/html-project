@@ -31,37 +31,126 @@
     <nav>
       <ul>
         <li><a href="/index.html">Main</a></li>
-        <li><a href="/html/music.html">Music</a></li>
-        <li><a href="#">Movies</a></li>
-        <li><a href="#">Cartoons</a></li>
-        <li><a href="#">Pictures</a></li>
-        <li><a href="#">Comments</a></li>
+        <li class="nav-music"><span>Music</span></li>
+        <li class="nav-movies"><span>Movies</span></li>
+        <li class="nav-cartoons"><span>Cartoons</span></li>
+        <li class="nav-pictures"><span>Pictures</span></li>
+        <li class="nav-comments"><span>Comments</span></li>
       </ul>
     </nav>
 
     <main>
       <div class="container">
         <div class="music" title="Music">
-          <a href="/html/music.html">
-            <img src="/img/music.jpg" alt="Music">
-          </a>
+          <img src="/img/music.jpg" alt="Music">
         </div>
         <div class="movies" title="Movies">
-          <a href="#">
-            <img src="/img/movies.jpg" alt="Movies">
-          </a>
+          <img src="/img/movies.jpg" alt="Movies">
         </div>
         <div class="cartoons" title="Cartoons">
-          <a href="#">
-            <img src="/img/cartoons.jpg" alt="Cartoons">
-          </a>
+          <img src="/img/cartoons.jpg" alt="Cartoons">
         </div>
         <div class="pictures" title="Pictures">
-          <a href="#">
-            <img src="/img/pictures.jpg" alt="Pictures">
-          </a>
+          <img src="/img/pictures.jpg" alt="Pictures">
         </div>
       </div>
+
+      <div class="box-music">
+        <div class="music" title="Song 1">
+          <img src="/img/box-music.jpg" alt="Song 1">
+        </div>
+        <div class="music" title="Song 2">
+          <img src="/img/box-music.jpg" alt="Song 2">
+        </div>
+        <div class="music" title="Song 3">
+          <img src="/img/box-music.jpg" alt="Song 3">
+        </div>
+        <div class="music" title="Song 4">
+          <img src="/img/box-music.jpg" alt="Song 4">
+        </div>
+        <div class="music" title="Song 5">
+          <img src="/img/box-music.jpg" alt="Song 5">
+        </div>
+        <div class="music" title="Song 6">
+          <img src="/img/box-music.jpg" alt="Song 6">
+        </div>
+        <div class="music" title="Song 7">
+          <img src="/img/box-music.jpg" alt="Song 7">
+        </div>
+      </div>
+
+      <div class="box-movies">
+        <div class="movies" title="Movie 1">
+          <img src="/img/box-movies.jpg" alt="Movie 1">
+        </div>
+        <div class="movies" title="Movie 1">
+          <img src="/img/box-movies.jpg" alt="Movie 1">
+        </div>
+        <div class="movies" title="Movie 1">
+          <img src="/img/box-movies.jpg" alt="Movie 1">
+        </div>
+        <div class="movies" title="Movie 1">
+          <img src="/img/box-movies.jpg" alt="Movie 1">
+        </div>
+        <div class="movies" title="Movie 1">
+          <img src="/img/box-movies.jpg" alt="Movie 1">
+        </div>
+        <div class="movies" title="Movie 1">
+          <img src="/img/box-movies.jpg" alt="Movie 1">
+        </div>
+        <div class="movies" title="Movie 1">
+          <img src="/img/box-movies.jpg" alt="Movie 1">
+        </div>
+      </div>
+
+      <div class="box-cartoons">
+        <div class="cartoons" title="Cartoon 1">
+          <img src="/img/box-cartoons.jpg" alt="Cartoon 1">
+        </div>
+        <div class="cartoons" title="Cartoon 1">
+          <img src="/img/box-cartoons.jpg" alt="Cartoon 1">
+        </div>
+        <div class="cartoons" title="Cartoon 1">
+          <img src="/img/box-cartoons.jpg" alt="Cartoon 1">
+        </div>
+        <div class="cartoons" title="Cartoon 1">
+          <img src="/img/box-cartoons.jpg" alt="Cartoon 1">
+        </div>
+        <div class="cartoons" title="Cartoon 1">
+          <img src="/img/box-cartoons.jpg" alt="Cartoon 1">
+        </div>
+        <div class="cartoons" title="Cartoon 1">
+          <img src="/img/box-cartoons.jpg" alt="Cartoon 1">
+        </div>
+        <div class="cartoons" title="Cartoon 1">
+          <img src="/img/box-cartoons.jpg" alt="Cartoon 1">
+        </div>
+      </div>
+
+      <div class="box-pictures">
+        <div class="pictures" title="Picture 1">
+          <img src="/img/box-pictures.jpg" alt="Picture 1">
+        </div>
+        <div class="pictures" title="Picture 1">
+          <img src="/img/box-pictures.jpg" alt="Picture 1">
+        </div>
+        <div class="pictures" title="Picture 1">
+          <img src="/img/box-pictures.jpg" alt="Picture 1">
+        </div>
+        <div class="pictures" title="Picture 1">
+          <img src="/img/box-pictures.jpg" alt="Picture 1">
+        </div>
+        <div class="pictures" title="Picture 1">
+          <img src="/img/box-pictures.jpg" alt="Picture 1">
+        </div>
+        <div class="pictures" title="Picture 1">
+          <img src="/img/box-pictures.jpg" alt="Picture 1">
+        </div>
+        <div class="pictures" title="Picture 1">
+          <img src="/img/box-pictures.jpg" alt="Picture 1">
+        </div>
+      </div>
+
     </main>
 
     <footer>
@@ -69,10 +158,10 @@
         © Hand made,
       </span>
     </footer>
+
   </div>
-  <script>
-    document.querySelector('.footer').textContent += new Date().getFullYear();
-  </script>
+
+  <script src="/script/script.js"></script>
 </body>
 
 </html>
