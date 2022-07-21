@@ -89,7 +89,7 @@ header {
   font-size: 1.1rem;
   border: 2px solid #000;
   outline: none;
-  background: rgb(250, 250, 250);
+  background: rgb(249, 249, 249);
 }
 
 .header__input input:hover {
@@ -103,7 +103,7 @@ header {
 
 .header__button button {
   cursor: pointer;
-  background: greenyellow;
+  background: rgb(177, 235, 91);
   padding: 3px;
   border: 1.5px solid blue;
   border-radius: 2px;
@@ -114,7 +114,7 @@ header {
 }
 
 .header__button button:hover {
-  box-shadow: 0 0 5px #333;
+  box-shadow: 0 0 7px #333;
   transition: all 0.3s;
 }
 
@@ -195,6 +195,46 @@ main {
   transform: scale(1.1);
   transition: all 0.5s;
 }
+
+.box-comments {
+  display: none;
+}
+
+.box-comments fieldset {
+  margin: 20px;
+  padding: 0 20px 20px;
+}
+
+#commentText {
+  width: 200px;
+  height: 100px;
+}
+
+#commentName,
+#commentEmail,
+#commentText {
+  font-size: 1.1rem;
+  padding: 3px;
+}
+
+.text label {
+  vertical-align: top;
+}
+
+.btn button {
+  cursor: pointer;
+  background:rgb(122, 211, 187);
+  padding: 8px;
+  font-size: 1.1rem;
+}
+
+.name,
+.email,
+.text,
+.btn {
+  margin-top: 20px;
+}
+
 
 footer {
   grid-area: footer;
