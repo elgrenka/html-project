@@ -113,21 +113,22 @@ function addComment() {
 
     if (commentEmail.value === "" ||
       !((/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i).test(commentEmail.value))) {
-        window.alert("Enter valid email");
-        commentEmail.focus();
-        return false;
+      window.alert("Enter valid email");
+      commentEmail.focus();
+      return false;
     }
 
     if (commentText.value === "" || commentText.value.length < 3) {
-      window.alert("Your comment must be at least three characters long");
+      window.alert("Your answer must be at least three characters long");
       commentText.focus();
       return false;
     }
 
-    alert('Your comment has been added');
+    alert('Your answer has been added');
     e.preventDefault();
     e.target.reset();
   })
+
   return true;
 };
 
