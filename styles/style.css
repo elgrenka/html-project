@@ -328,3 +328,48 @@ footer {
   background: #f2f2f2;
 }
 
+.modal-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  z-index: 99;
+  transition: opacity 300ms ease-in;
+  pointer-events: none;
+}
+
+.modal-open:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-open > article {
+  position: relative;
+  width: 400px;
+  margin: 10% auto;
+  padding: 20px;
+  background: #fff;
+  color: darkblue;
+  border-radius: 10px;
+  text-align: center;
+  border: 3px solid blueviolet;
+}
+
+.modal-open audio {
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  background: #9d9d9d;
+  color: #fff;
+  text-decoration: none;
+  line-height: 25px;
+  text-align: center;
+  width: 24px;
+}

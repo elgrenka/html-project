@@ -134,3 +134,53 @@ function addComment() {
 
 addComment();
 
+
+let chooseTrek = () => {
+  let srcUrl = '';
+  let audio = document.querySelector('audio');
+  let song_1 = document.querySelector('#song_1');
+  let song_2 = document.querySelector('#song_2');
+  let song_3 = document.querySelector('#song_3');
+  let song_4 = document.querySelector('#song_4');
+  let song_5 = document.querySelector('#song_5');
+  let song_6 = document.querySelector('#song_6');
+  let song_7 = document.querySelector('#song_7');
+
+  song_1.addEventListener('click', () => {
+    srcUrl = './music/Filatov_Karas_-_CHilit.mp3';
+    audio.src = srcUrl;
+  });
+
+  song_2.addEventListener('click', () => {
+    srcUrl = './music/Galibri_Mavik_-_Federiko_Fellini.mp3';
+    audio.src = srcUrl;
+  });
+
+  song_3.addEventListener('click', () => {
+    srcUrl = './music/KHABIB_-_Yagoda_malinka.mp3';
+    audio.src = srcUrl;
+  });
+
+  song_4.addEventListener('click', () => {
+    srcUrl = './music/KVASHA_-_Zelenoglazoe_taksi.mp3';
+    audio.src = srcUrl;
+  });
+
+  song_5.addEventListener('click', () => {
+    srcUrl = './music/MBrother_-_Trebles.mp3';
+    audio.src = srcUrl;
+  });
+
+  song_6.addEventListener('click', () => {
+    srcUrl = './music/Scooter_-_4_AM.mp3';
+    audio.src = srcUrl;
+  });
+
+  song_7.addEventListener('click', () => {
+    srcUrl = './music/Sia_David_Guetta_-_Flames.mp3';
+    // audio.setAttribute('autoplay', '');
+    audio.src = srcUrl;
+  });
+};
+
+chooseTrek();
