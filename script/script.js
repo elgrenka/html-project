@@ -184,3 +184,54 @@ let chooseTrek = () => {
 };
 
 chooseTrek();
+
+let chooseTrailer = () => {
+  let srcUrl = '';
+  let video = document.querySelector('video');
+  let film_1 = document.querySelector('#film_1');
+  let film_2 = document.querySelector('#film_2');
+  let film_3 = document.querySelector('#film_3');
+  let film_4 = document.querySelector('#film_4');
+  let film_5 = document.querySelector('#film_5');
+  let film_6 = document.querySelector('#film_6');
+  let film_7 = document.querySelector('#film_7');
+
+  film_1.addEventListener('click', () => {
+    srcUrl = './movies/Predator_5.mp4';
+    video.src = srcUrl;
+  });
+
+  film_2.addEventListener('click', () => {
+    srcUrl = './movies/Samaritan.mp4';
+    video.src = srcUrl;
+  });
+
+  film_3.addEventListener('click', () => {
+    srcUrl = './movies/Orbital.mp4';
+    video.src = srcUrl;
+  });
+
+  film_4.addEventListener('click', () => {
+    srcUrl = './movies/Dungeons_and_dragons.mp4';
+    video.src = srcUrl;
+  });
+
+  film_5.addEventListener('click', () => {
+    srcUrl = './movies/Harry_Potter_and_the_cursed_child.mp4';
+    video.src = srcUrl;
+  });
+
+  film_6.addEventListener('click', () => {
+    srcUrl = './movies/Oppenheimer.mp4';
+    video.src = srcUrl;
+  });
+
+  film_7.addEventListener('click', () => {
+    srcUrl = './movies/Ben_10.mp4';
+    video.src = srcUrl;
+  });
+};
+
+chooseTrailer();
+
+
