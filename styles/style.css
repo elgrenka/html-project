@@ -183,7 +183,7 @@ main {
 .pictures {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   width: 150px;
@@ -203,15 +203,18 @@ main {
 }
 
 .box-music img,
-.box-movies img {
+.box-movies img,
+.box-cartoons img {
   height: initial;
 }
 
 .box-music .music-title,
-.box-movies .movie-title {
+.box-movies .movie-title,
+.box-cartoons .cartoon-title {
   overflow: auto;
   font-size: 1.1rem;
   text-align: center;
+  padding-right: 3px;
 }
 
 .container .music img:hover,

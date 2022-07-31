@@ -137,7 +137,7 @@ addComment();
 
 let chooseTrek = () => {
   let srcUrl = '';
-  let audio = document.querySelector('audio');
+  let audio = document.querySelector('.box-music audio');
   let song_1 = document.querySelector('#song_1');
   let song_2 = document.querySelector('#song_2');
   let song_3 = document.querySelector('#song_3');
@@ -178,7 +178,6 @@ let chooseTrek = () => {
 
   song_7.addEventListener('click', () => {
     srcUrl = './music/Sia_David_Guetta_-_Flames.mp3';
-    // audio.setAttribute('autoplay', '');
     audio.src = srcUrl;
   });
 };
@@ -187,7 +186,7 @@ chooseTrek();
 
 let chooseTrailer = () => {
   let srcUrl = '';
-  let video = document.querySelector('video');
+  let video = document.querySelector('.box-movies video');
   let film_1 = document.querySelector('#film_1');
   let film_2 = document.querySelector('#film_2');
   let film_3 = document.querySelector('#film_3');
@@ -233,5 +232,54 @@ let chooseTrailer = () => {
 };
 
 chooseTrailer();
+
+let chooseMult = () => {
+  let srcUrl = '';
+  let video = document.querySelector('.box-cartoons video');
+  let mult_1 = document.querySelector('#mult_1');
+  let mult_2 = document.querySelector('#mult_2');
+  let mult_3 = document.querySelector('#mult_3');
+  let mult_4 = document.querySelector('#mult_4');
+  let mult_5 = document.querySelector('#mult_5');
+  let mult_6 = document.querySelector('#mult_6');
+  let mult_7 = document.querySelector('#mult_7');
+
+  mult_1.addEventListener('click', () => {
+    srcUrl = './cartoons/Hunt.mp4';
+    video.src = srcUrl;
+  });
+
+  mult_2.addEventListener('click', () => {
+    srcUrl = './cartoons/Cat_in_boots.mp4';
+    video.src = srcUrl;
+  });
+
+  mult_3.addEventListener('click', () => {
+    srcUrl = './cartoons/Crazy_carrot.mp4';
+    video.src = srcUrl;
+  });
+
+  mult_4.addEventListener('click', () => {
+    srcUrl = './cartoons/Log_Jam.mp4';
+    video.src = srcUrl;
+  });
+
+  mult_5.addEventListener('click', () => {
+    srcUrl = './cartoons/Luck.mp4';
+    video.src = srcUrl;
+  });
+
+  mult_6.addEventListener('click', () => {
+    srcUrl = './cartoons/Redemption.mp4';
+    video.src = srcUrl;
+  });
+
+  mult_7.addEventListener('click', () => {
+    srcUrl = './cartoons/Refrigerator.mp4';
+    video.src = srcUrl;
+  });
+};
+
+chooseMult();
 
 
