@@ -238,7 +238,6 @@ let chooseTrailer = () => {
 chooseTrailer();
 
 let chooseMult = () => {
-  let srcUrl = '';
   let video = document.querySelector('.box-cartoons video');
   let mult_1 = document.querySelector('#mult_1');
   let mult_2 = document.querySelector('#mult_2');
@@ -249,46 +248,38 @@ let chooseMult = () => {
   let mult_7 = document.querySelector('#mult_7');
 
   mult_1.addEventListener('click', () => {
-    srcUrl = './cartoons/Hunt.mp4';
-    video.src = srcUrl;
+    video.src = './cartoons/Hunt.mp4';
   });
 
   mult_2.addEventListener('click', () => {
-    srcUrl = './cartoons/Cat_in_boots.mp4';
-    video.src = srcUrl;
+    video.src = './cartoons/Cat_in_boots.mp4';
   });
 
   mult_3.addEventListener('click', () => {
-    srcUrl = './cartoons/Crazy_carrot.mp4';
-    video.src = srcUrl;
+    video.src = './cartoons/Crazy_carrot.mp4';
   });
 
   mult_4.addEventListener('click', () => {
-    srcUrl = './cartoons/Log_Jam.mp4';
-    video.src = srcUrl;
+    video.src = './cartoons/Log_Jam.mp4';
   });
 
   mult_5.addEventListener('click', () => {
-    srcUrl = './cartoons/Luck.mp4';
-    video.src = srcUrl;
+    video.src = './cartoons/Luck.mp4';
   });
 
   mult_6.addEventListener('click', () => {
-    srcUrl = './cartoons/Redemption.mp4';
-    video.src = srcUrl;
+    video.src = './cartoons/Redemption.mp4';
   });
 
   mult_7.addEventListener('click', () => {
-    srcUrl = './cartoons/Refrigerator.mp4';
-    video.src = srcUrl;
+    video.src = './cartoons/Refrigerator.mp4';
   });
 };
 
 chooseMult();
 
 let choosePhoto = () => {
-  let srcUrl = '';
-  let img = document.querySelector('#window-background img');
+  let img = document.querySelector('#window img');
   let photo_1 = document.querySelector('#photo_1');
   let photo_2 = document.querySelector('#photo_2');
   let photo_3 = document.querySelector('#photo_3');
@@ -298,39 +289,33 @@ let choosePhoto = () => {
   let photo_7 = document.querySelector('#photo_7');
 
   photo_1.addEventListener('click', () => {
-    srcUrl = './pictures/Cats.jpg';
-    img.src = srcUrl;
+    img.src = './pictures/Cats.jpg';
   });
 
-  song_2.addEventListener('click', () => {
-    srcUrl = './music/Galibri_Mavik_-_Federiko_Fellini.mp3';
-    audio.src = srcUrl;
+  photo_2.addEventListener('click', () => {
+    img.src = './pictures/Dogs.jpg';
   });
 
-  song_3.addEventListener('click', () => {
-    srcUrl = './music/KHABIB_-_Yagoda_malinka.mp3';
-    audio.src = srcUrl;
+  photo_3.addEventListener('click', () => {
+    img.src = './pictures/Lynx.jpg';
   });
 
-  song_4.addEventListener('click', () => {
-    srcUrl = './music/KVASHA_-_Zelenoglazoe_taksi.mp3';
-    audio.src = srcUrl;
+  photo_4.addEventListener('click', () => {
+    img.src = './pictures/Cat_in_boots_eyes.jpg';
   });
 
-  song_5.addEventListener('click', () => {
-    srcUrl = './music/MBrother_-_Trebles.mp3';
-    audio.src = srcUrl;
+  photo_5.addEventListener('click', () => {
+    img.src = './pictures/Lemur.jpg';
   });
 
-  song_6.addEventListener('click', () => {
-    srcUrl = './music/Scooter_-_4_AM.mp3';
-    audio.src = srcUrl;
+  photo_6.addEventListener('click', () => {
+    img.src = './pictures/Chameleon.jpg';
   });
 
-  song_7.addEventListener('click', () => {
-    srcUrl = './music/Sia_David_Guetta_-_Flames.mp3';
-    audio.src = srcUrl;
+  photo_7.addEventListener('click', () => {
+    img.src = './pictures/Monkeys.jpg';
   });
 };
 
+choosePhoto();
 

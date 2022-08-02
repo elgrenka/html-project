@@ -224,6 +224,10 @@ main {
   overflow: initial;
 }
 
+.box-music .music:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
 .container .music img:hover,
 .container .movies img:hover,
 .container .cartoons img:hover,
