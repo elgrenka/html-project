@@ -18,10 +18,6 @@ function displayFlex() {
   let boxPictures = document.querySelector('.box-pictures');
   let navComments = document.querySelector('#nav-comments');
   let boxComments = document.querySelector('.box-comments');
-  // let commentForm = document.querySelector('#commentForm');
-  // let commentName = document.querySelector('#commentName');
-  // let commentEmail = document.querySelector('#commentEmail');
-  // let commentText = document.querySelector('#commentText');
 
   music.addEventListener('click', () => {
     boxMusic.style.display = 'flex';
@@ -108,10 +104,16 @@ function displayFlex() {
 displayFlex();
 
 function addComment() {
+  let commentForm = document.querySelector('#commentForm');
+  let commentName = document.querySelector('#commentName');
+  let commentEmail = document.querySelector('#commentEmail');
+  let commentText = document.querySelector('#commentText');
+
   commentForm.addEventListener('submit', (e) => {
     if (commentName.value === "" || commentName.value.length < 3) {
       window.alert("Your name must be at least three characters long");
       commentName.focus();
+      e.preventDefault();
       return false;
     }
 
@@ -119,16 +121,18 @@ function addComment() {
       !((/^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i).test(commentEmail.value))) {
       window.alert("Enter valid email");
       commentEmail.focus();
+      e.preventDefault();
       return false;
     }
 
     if (commentText.value === "" || commentText.value.length < 3) {
       window.alert("Your answer must be at least three characters long");
       commentText.focus();
+      e.preventDefault();
       return false;
     }
-
-    alert('Your answer has been added');
+    
+    alert('Your answer has been added!');
     e.preventDefault();
     e.target.reset();
   })
@@ -140,7 +144,6 @@ addComment();
 
 
 let chooseTrek = () => {
-  let srcUrl = '';
   let audio = document.querySelector('.box-music audio');
   let song_1 = document.querySelector('#song_1');
   let song_2 = document.querySelector('#song_2');
@@ -151,45 +154,37 @@ let chooseTrek = () => {
   let song_7 = document.querySelector('#song_7');
 
   song_1.addEventListener('click', () => {
-    srcUrl = './music/Filatov_Karas_-_CHilit.mp3';
-    audio.src = srcUrl;
+    audio.src = './music/Filatov_Karas_-_CHilit.mp3';
   });
 
   song_2.addEventListener('click', () => {
-    srcUrl = './music/Galibri_Mavik_-_Federiko_Fellini.mp3';
-    audio.src = srcUrl;
+    audio.src = './music/Galibri_Mavik_-_Federiko_Fellini.mp3';
   });
 
   song_3.addEventListener('click', () => {
-    srcUrl = './music/KHABIB_-_Yagoda_malinka.mp3';
-    audio.src = srcUrl;
+    audio.src = './music/KHABIB_-_Yagoda_malinka.mp3';
   });
 
   song_4.addEventListener('click', () => {
-    srcUrl = './music/KVASHA_-_Zelenoglazoe_taksi.mp3';
-    audio.src = srcUrl;
+    audio.src = './music/KVASHA_-_Zelenoglazoe_taksi.mp3';
   });
 
   song_5.addEventListener('click', () => {
-    srcUrl = './music/MBrother_-_Trebles.mp3';
-    audio.src = srcUrl;
+    audio.src = './music/MBrother_-_Trebles.mp3';
   });
 
   song_6.addEventListener('click', () => {
-    srcUrl = './music/Scooter_-_4_AM.mp3';
-    audio.src = srcUrl;
+    audio.src = './music/Scooter_-_4_AM.mp3';
   });
 
   song_7.addEventListener('click', () => {
-    srcUrl = './music/Sia_David_Guetta_-_Flames.mp3';
-    audio.src = srcUrl;
+    audio.src = './music/Sia_David_Guetta_-_Flames.mp3';
   });
 };
 
 chooseTrek();
 
 let chooseTrailer = () => {
-  let srcUrl = '';
   let video = document.querySelector('.box-movies video');
   let film_1 = document.querySelector('#film_1');
   let film_2 = document.querySelector('#film_2');
@@ -200,38 +195,31 @@ let chooseTrailer = () => {
   let film_7 = document.querySelector('#film_7');
 
   film_1.addEventListener('click', () => {
-    srcUrl = './movies/Predator_5.mp4';
-    video.src = srcUrl;
+    video.src = './movies/Predator_5.mp4';
   });
 
   film_2.addEventListener('click', () => {
-    srcUrl = './movies/Samaritan.mp4';
-    video.src = srcUrl;
+    video.src = './movies/Samaritan.mp4';
   });
 
   film_3.addEventListener('click', () => {
-    srcUrl = './movies/Orbital.mp4';
-    video.src = srcUrl;
+    video.src = './movies/Orbital.mp4';
   });
 
   film_4.addEventListener('click', () => {
-    srcUrl = './movies/Dungeons_and_dragons.mp4';
-    video.src = srcUrl;
+    video.src = './movies/Dungeons_and_dragons.mp4';
   });
 
   film_5.addEventListener('click', () => {
-    srcUrl = './movies/Harry_Potter_and_the_cursed_child.mp4';
-    video.src = srcUrl;
+    video.src = './movies/Harry_Potter_and_the_cursed_child.mp4';
   });
 
   film_6.addEventListener('click', () => {
-    srcUrl = './movies/Oppenheimer.mp4';
-    video.src = srcUrl;
+    video.src = './movies/Oppenheimer.mp4';
   });
 
   film_7.addEventListener('click', () => {
-    srcUrl = './movies/Ben_10.mp4';
-    video.src = srcUrl;
+    video.src = './movies/Ben_10.mp4';
   });
 };
 

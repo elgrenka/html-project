@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/favicon.png" type="image/png">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Entertainment content</title>
 </head>
@@ -36,6 +37,8 @@
         <li class="nav-cartoons" id="nav-cartoons"><span>Cartoons</span></li>
         <li class="nav-pictures" id="nav-pictures"><span>Pictures</span></li>
         <li class="nav-comments" id="nav-comments"><span>Feedback</span></li>
+        <li><span>Sign in<br>(Sign up)</span></li>
+        <li><span>About author</span></li>
       </ul>
     </nav>
 
@@ -253,9 +256,9 @@
           </div>
         </a>
         <a href="#window-background">
-          <div class="pictures" id="photo_7" title="Monkeys">
+          <div class="pictures" id="photo_7" title="Monkey">
             <img src="./pictures/Monkeys.jpg" alt="Picture 7">
-            <p class="picture-title">Monkeys</p>
+            <p class="picture-title">Monkey</p>
           </div>
         </a>
 
@@ -285,6 +288,54 @@
             </div>
             <div class="btn">
               <button type="submit">Add your answer</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="box-sign-in">
+        <form action="#" id="signInForm">
+          <fieldset>
+            <legend>Sign in</legend>
+            <div class="email">
+              <label for="signInEmail">Email: </label>
+              <input type="email" id="signInEmail" required>
+            </div>
+            <div class="password">
+              <label for="signInPassword">Password: </label>
+              <input type="password" id="signInPassword" required>
+            </div>
+            <div class="btn">
+              <button type="submit">Sign in</button>
+              <span>or <a href="#">Sign up</a></span>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="box-sign-up">
+        <form action="#" id="signUpForm">
+          <fieldset>
+            <legend>Sign up</legend>
+            <div class="name">
+              <label for="signUpName">Name: </label>
+              <input type="text" id="signUpName" required>
+            </div>
+            <div class="email">
+              <label for="signUpEmail">Email: </label>
+              <input type="email" id="signUpEmail" required>
+            </div>
+            <div class="password">
+              <label for="signUpPassword">Password: </label>
+              <input type="password" id="signUpPassword" required>
+            </div>
+            <div class="password">
+              <label for="signUpConfirmPassword">Confirm Password: </label>
+              <input type="password" id="signUpConfirmPassword" required>
+            </div>
+            <div class="btn">
+              <button type="submit">Sign up</button>
+              <span>or <a href="#">Sign in</a></span>
             </div>
           </fieldset>
         </form>

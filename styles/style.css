@@ -190,6 +190,7 @@ main {
   height: 200px;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.4s ease-out;
 }
 
 .music img,
@@ -204,9 +205,7 @@ main {
 
 .box-music img,
 .box-movies img,
-.box-cartoons img
-/* .box-pictures img { */
-{
+.box-cartoons img {
   height: initial;
 }
 
@@ -224,8 +223,12 @@ main {
   overflow: initial;
 }
 
-.box-music .music:hover {
+.box-music .music:hover,
+.box-movies .movies:hover,
+.box-cartoons .cartoons:hover,
+.box-pictures .pictures:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  transition: all 0.4s ease-out;
 }
 
 .container .music img:hover,
@@ -241,7 +244,9 @@ main {
   display: none;
 }
 
-.box-comments fieldset {
+.box-comments fieldset,
+.box-sign-in fieldset,
+.box-sign-up fieldset {
   margin: 20px;
   padding: 0 20px 20px;
 }
@@ -253,7 +258,13 @@ main {
 
 #commentName,
 #commentEmail,
-#commentText {
+#commentText,
+#signInEmail,
+#signInPassword,
+#signUpName,
+#signUpEmail,
+#signUpPassword,
+#signUpConfirmPassword {
   font-size: 1.1rem;
   padding: 3px;
 }
@@ -272,7 +283,8 @@ main {
 .name,
 .email,
 .text,
-.btn {
+.btn,
+.password {
   margin-top: 20px;
 }
 
