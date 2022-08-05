@@ -37,8 +37,10 @@
         <li class="nav-cartoons" id="nav-cartoons"><span>Cartoons</span></li>
         <li class="nav-pictures" id="nav-pictures"><span>Pictures</span></li>
         <li class="nav-comments" id="nav-comments"><span>Feedback</span></li>
-        <li><span>Sign in<br>(Sign up)</span></li>
-        <li><span>About author</span></li>
+        <li class="nav-signIn" id="nav-signIn">
+          <span>Sign in<br><small>(Sign up)</small></span>
+        </li>
+        <li class="nav-about" id="nav-about"><span>About author</span></li>
       </ul>
     </nav>
 
@@ -293,7 +295,7 @@
         </form>
       </div>
 
-      <div class="box-sign-in">
+      <div class="box-signIn">
         <form action="#" id="signInForm">
           <fieldset>
             <legend>Sign in</legend>
@@ -307,13 +309,12 @@
             </div>
             <div class="btn">
               <button type="submit">Sign in</button>
-              <span>or <a href="#">Sign up</a></span>
             </div>
           </fieldset>
         </form>
       </div>
 
-      <div class="box-sign-up">
+      <div class="box-signUp">
         <form action="#" id="signUpForm">
           <fieldset>
             <legend>Sign up</legend>
@@ -335,10 +336,20 @@
             </div>
             <div class="btn">
               <button type="submit">Sign up</button>
-              <span>or <a href="#">Sign in</a></span>
             </div>
           </fieldset>
         </form>
+      </div>
+
+      <div class="box-about">
+        <div class="photo">
+          <img src="./img/photo.jpg" alt="Photo">
+        </div>
+        <div class="description">
+          Студент Академии "Цифра" <br>
+          Никитин Дмитрий. <br><br>
+          Год обучения: 2022.
+        </div>
       </div>
 
     </main>

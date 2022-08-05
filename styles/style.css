@@ -150,6 +150,7 @@ main {
   margin: 10px 10px 10px 0;
   background: powderblue;
   border-radius: 10px;
+  overflow: auto;
 }
 
 .container {
@@ -245,8 +246,8 @@ main {
 }
 
 .box-comments fieldset,
-.box-sign-in fieldset,
-.box-sign-up fieldset {
+.box-signIn fieldset,
+.box-signUp fieldset {
   margin: 20px;
   padding: 0 20px 20px;
 }
@@ -401,3 +402,29 @@ footer {
   text-align: center;
   width: 24px;
 }
+
+.box-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.box-about .photo {
+  width: 20%;
+  height: 200px;
+}
+
+.box-about .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box-signIn,
+.box-signUp,
+.box-about {
+  display: none;
+}
+
+

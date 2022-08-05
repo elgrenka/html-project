@@ -18,6 +18,12 @@ function displayFlex() {
   let boxPictures = document.querySelector('.box-pictures');
   let navComments = document.querySelector('#nav-comments');
   let boxComments = document.querySelector('.box-comments');
+  let navSignIn = document.querySelector('#nav-signIn');
+  let navAbout = document.querySelector('#nav-about');
+  let boxSignIn = document.querySelector('.box-signIn');
+  let boxSignUp = document.querySelector('.box-signUp');
+  let boxAbout = document.querySelector('.box-about');
+
 
   music.addEventListener('click', () => {
     boxMusic.style.display = 'flex';
@@ -26,6 +32,9 @@ function displayFlex() {
     boxCartoons.style.display = 'none';
     boxPictures.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   navMusic.addEventListener('click', () => {
@@ -35,6 +44,9 @@ function displayFlex() {
     boxCartoons.style.display = 'none';
     boxPictures.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   movies.addEventListener('click', () => {
@@ -44,6 +56,9 @@ function displayFlex() {
     boxCartoons.style.display = 'none';
     boxPictures.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   navMovies.addEventListener('click', () => {
@@ -53,6 +68,9 @@ function displayFlex() {
     boxCartoons.style.display = 'none';
     boxPictures.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   cartoons.addEventListener('click', () => {
@@ -62,6 +80,9 @@ function displayFlex() {
     boxMusic.style.display = 'none';
     boxPictures.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   navCartoons.addEventListener('click', () => {
@@ -71,6 +92,9 @@ function displayFlex() {
     boxMusic.style.display = 'none';
     boxPictures.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   pictures.addEventListener('click', () => {
@@ -80,6 +104,9 @@ function displayFlex() {
     boxMusic.style.display = 'none';
     boxCartoons.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   navPictures.addEventListener('click', () => {
@@ -89,10 +116,40 @@ function displayFlex() {
     boxMusic.style.display = 'none';
     boxCartoons.style.display = 'none';
     boxComments.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
   });
 
   navComments.addEventListener('click', () => {
     boxComments.style.display = 'block';
+    boxPictures.style.display = 'none';
+    boxMovies.style.display = 'none';
+    container.style.display = 'none';
+    boxMusic.style.display = 'none';
+    boxCartoons.style.display = 'none';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxAbout.style.display = 'none';
+  })
+
+  navSignIn.addEventListener('click', () => {
+    boxSignIn.style.display = 'flex';
+    boxSignUp.style.display = 'flex';
+    boxComments.style.display = 'none';
+    boxPictures.style.display = 'none';
+    boxMovies.style.display = 'none';
+    container.style.display = 'none';
+    boxMusic.style.display = 'none';
+    boxCartoons.style.display = 'none';
+    boxAbout.style.display = 'none';
+  })
+
+  navAbout.addEventListener('click', () => {
+    boxAbout.style.display = 'flex';
+    boxSignIn.style.display = 'none';
+    boxSignUp.style.display = 'none';
+    boxComments.style.display = 'none';
     boxPictures.style.display = 'none';
     boxMovies.style.display = 'none';
     container.style.display = 'none';
