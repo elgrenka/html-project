@@ -189,7 +189,7 @@ function addComment() {
       return false;
     }
     
-    alert('Your answer has been added!');
+    alert('Your answer has been added!!!');
     e.preventDefault();
     e.target.reset();
   })
@@ -199,6 +199,27 @@ function addComment() {
 
 addComment();
 
+let getEnter = () => {
+  let signInForm = document.querySelector('#signInForm');
+  signInForm.addEventListener('submit', (e) => {
+    alert('Now you can enter!!!');
+    e.preventDefault();
+    e.target.reset();
+  })
+};
+
+getEnter();
+
+let getRegister = () => {
+  let signUpForm = document.querySelector('#signUpForm');
+  signUpForm.addEventListener('submit', (e) => {
+    alert('You are registered successfully!!!');
+    e.preventDefault();
+    e.target.reset();
+  })
+};
+
+getRegister();
 
 let chooseTrek = () => {
   let audio = document.querySelector('.box-music audio');

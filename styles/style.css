@@ -276,9 +276,13 @@ main {
 
 .btn button {
   cursor: pointer;
-  background: rgb(122, 211, 187);
+  background: rgba(122, 211, 187, 0.6);
   padding: 8px;
   font-size: 1.1rem;
+}
+
+.btn button:hover {
+  background: rgb(122, 211, 187);
 }
 
 .name,
