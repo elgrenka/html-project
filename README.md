@@ -1,2 +1,2 @@
 # Academy html-project
-Look project at https://bugigen.github.io/html-project/
+Look project at https://elgrenka.github.io/html-project/
